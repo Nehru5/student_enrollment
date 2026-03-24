@@ -20,6 +20,27 @@
       "department": "CSE",
       "course": "PFS",
       "id": "2C2irsVgbH8"
+    },
+    {
+      "name": "Kiran",
+      "email": "Kiran@gmail.com",
+      "department": "CSE",
+      "course": "PFS",
+      "id": "t9bW5jIfBio"
+    },
+    {
+      "name": "Kiran",
+      "email": "Kiran@gmail.com",
+      "department": "CSE",
+      "course": "PFS",
+      "id": "2rtboqfO_IA"
+    },
+    {
+      "name": "Kiran",
+      "email": "Kiran@gmail.com",
+      "department": "CSE",
+      "course": "PFS",
+      "id": "9XFqUQOYPYU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
