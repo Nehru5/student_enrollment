@@ -2,8 +2,12 @@ import React from 'react'
 import Nav from '../components/Nav'
 import { useEffect,useState } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
+import UpdateStudent from './UpdateStudent'
 const ViewStudent = () => {
   const [users,setUsers] = useState([])
+  const navigate = useNavigate()
+
   function fetchData(){
     axios.get("http://localhost:3000/users")
     .then(x=>setUsers(x.data))
@@ -12,6 +16,10 @@ const ViewStudent = () => {
   useEffect(()=>{
     fetchData()
   },[])
+
+  function handleUpdate(id){
+    navigate(`/updatestudent/${id}`)
+  }
   return (
     <>
       <Nav/>
@@ -22,7 +30,7 @@ const ViewStudent = () => {
           <h2>Email: {x.email}</h2>
           <h2>Department: {x.department}</h2>
           <h2>Course: {x.course}</h2>
-          <button>Edit</button>
+          <button onClick={()=>{handleUpdate(x.id)}}>Edit</button>
           <button>Delete</button>
         </div>
       })}

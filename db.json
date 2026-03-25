@@ -5,42 +5,21 @@
       "email": "Kiran@gmail.com",
       "department": "CSE",
       "course": "PFS",
-      "id": "EuhckWQcfnU"
+      "id": "DgTsDXxdgds"
     },
     {
-      "name": "Kiran",
-      "email": "Kiran@gmail.com",
+      "name": "Prakash",
+      "email": "Prakash@gmail.com",
       "department": "CSE",
-      "course": "PFS",
-      "id": "SOd2AOyg7iI"
+      "course": "JFS",
+      "id": "OwyfU1nX-Rs"
     },
     {
-      "name": "Kiran",
-      "email": "Kiran@gmail.com",
+      "name": "Vinay",
+      "email": "Vinay@gmail.com",
       "department": "CSE",
       "course": "PFS",
-      "id": "2C2irsVgbH8"
-    },
-    {
-      "name": "Kiran",
-      "email": "Kiran@gmail.com",
-      "department": "CSE",
-      "course": "PFS",
-      "id": "t9bW5jIfBio"
-    },
-    {
-      "name": "Kiran",
-      "email": "Kiran@gmail.com",
-      "department": "CSE",
-      "course": "PFS",
-      "id": "2rtboqfO_IA"
-    },
-    {
-      "name": "Kiran",
-      "email": "Kiran@gmail.com",
-      "department": "CSE",
-      "course": "PFS",
-      "id": "9XFqUQOYPYU"
+      "id": "WXFbJKWRlYg"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
