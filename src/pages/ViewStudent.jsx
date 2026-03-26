@@ -4,6 +4,7 @@ import { useEffect,useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import UpdateStudent from './UpdateStudent'
+import { toast } from 'react-toastify'
 const ViewStudent = () => {
   const [users,setUsers] = useState([])
   const navigate = useNavigate()
@@ -20,6 +21,16 @@ const ViewStudent = () => {
   function handleUpdate(id){
     navigate(`/updatestudent/${id}`)
   }
+  function handleDelete(id){
+    axios.delete(`http://localhost:3000/users/${id}`)
+    .then(()=>{
+        toast.success("Deleted successfully")
+        fetchData()
+    })
+    .catch(err=>{
+      toast.error("Failed to Deleted")
+    })
+  }
   return (
     <>
       <Nav/>
@@ -31,7 +42,7 @@ const ViewStudent = () => {
           <h2>Department: {x.department}</h2>
           <h2>Course: {x.course}</h2>
           <button onClick={()=>{handleUpdate(x.id)}}>Edit</button>
-          <button>Delete</button>
+          <button onClick={()=>{handleDelete(x.id)}}>Delete</button>
         </div>
       })}
     </>

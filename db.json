@@ -1,26 +1,4 @@
 {
-  "users": [
-    {
-      "name": "Kiran",
-      "email": "Kiran@gmail.com",
-      "department": "CSE",
-      "course": "PFS",
-      "id": "DgTsDXxdgds"
-    },
-    {
-      "name": "Prakash",
-      "email": "Prakash@gmail.com",
-      "department": "CSE",
-      "course": "JFS",
-      "id": "OwyfU1nX-Rs"
-    },
-    {
-      "name": "Vinay",
-      "email": "Vinay@gmail.com",
-      "department": "CSE",
-      "course": "PFS",
-      "id": "WXFbJKWRlYg"
-    }
-  ],
+  "users": [],
   "$schema": "./node_modules/json-server/schema.json"
 }
